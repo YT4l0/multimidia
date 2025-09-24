@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(18, 18, 18); /* parecido com o tema do Spotify */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  border-radius: 16px;
+  background-color: #282828;
+  height: 88vh;
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.album {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.album img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.info{
+
+    text-align: center;
+}
+.info h2{
+    font-size: 20px;
+    margin: 10px 0px 5px;
+}
+
+.info p{
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 15px 0;
+
+}
+
+#progress {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#progress::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.controles{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.controles button{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: trasnform 0.2 ease;
+}
+
+.controles button:hover {
+  transform: scale(1.2);
+  color: #1db954; /* verde do Spotify */
+}
